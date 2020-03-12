@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Second Tempate</title>
+	<style type="text/css">
+	body {
+		  font-family: sans-serif, monospace;
+		  margin: 0;
+		  padding: 0;
+		}
+		html, body {
+
+				height: 100%;
+				padding: 0;
+				margin: 0;
+
+		}
+		.nav{
+			background-color: #990100;
+			/*margin-top: 1rem;*/
+			position: relative;
+			width: 100%;
+			height: 7%;	
+		}
+		.navBtn{
+			margin-top: 9px;
+			border: none; /* Remove borders */
+			color: white; /* Add a text color */
+			background-color: #0099CB;
+			padding: 6px 20px; /* Add some padding */
+			cursor: pointer; /* Add a pointer cursor on mouse-over */
+			/*width: 10%;*/
+			/*float: left;*/
+			font-family: Calibri, sans-serif;
+			font-weight: bolder;
+			font-size: 18px;
+			margin-left: 12rem;
+			border-radius: 5px;
+		}
+		.navList,li{
+
+			/*float: left;*/
+			display: inline;
+			/*width: 50%;	*/
+			margin-left: 2rem;
+			padding-right: 8rem;
+			background-color: #990100;
+		}
+		li,a{
+			font-family: Calibri, sans-serif;
+			font-weight: bolder;
+			font-size: 18px;
+			color: white;
+			text-decoration: none;
+		}
+		.fist-select{
+			border:none;
+			background-color: #990100; 
+			font-family: Calibri, sans-serif;
+			font-weight: bolder;
+			padding-left: 2rem;
+			font-size: 18px;
+			color: white;
+		}
+		.fist-li{
+			margin-left: 2rem;
+			padding-right: -2rem;
+		}
+		#search:hover{
+			background-color: white;
+			opacity: 0.3;
+		}
+		.select-nav{
+			background-color: #D5D6D1;
+			position: relative;
+			height: 8%;
+			margin-top: -1rem;
+		}
+		.select-li{
+			margin-top: 4px;
+			background-color: #D5D6D1;
+			margin-left: 8.5rem;
+			padding-right: 0.5rem;
+			padding-left: 1rem;
+			border: none;
+		}
+		.second-select{
+			border:none;
+			background-color: #D5D6D1;
+			font-family: Calibri, sans-serif;
+			font-weight: bolder;
+			font-size: 22px;
+			color: black;
+			margin-top: 12px;
+		}
+
+		.cover{
+			 display:grid;
+		      /* grid-template-columns:1fr 1fr 1fr;*/
+		      grid-template-columns:repeat(2, 1fr);
+		     /* grid-gap:1em;*/
+		      /* grid-auto-rows:100px; */
+		      grid-auto-rows: minmax(100px, auto);
+		}
+		.cover-one{
+			background-color: lightblue;
+		}
+		.cover-one > h1{
+			margin-top: 6rem;
+			margin-left: 3rem;
+		}
+		/*.cover{
+			display: inline-block;
+			width: 100%;
+		}*/
+		/*.cover-one{
+			display: inline-block;
+			overflow: hidden;
+			float: left;	
+			width: 45%;
+			height: auto;*/
+
+		}
+		/*.two{
+			background-color: lightblue;
+			width: 55%;
+			position: relative;
+			padding-bottom: 160px;
+*/
+			/*margin-right: 1%;*/
+		/*}*/
+
+		#test{
+			margin-left: 4rem;
+			margin-top: 6rem;
+		}
+		#para{
+			margin-left: 4.5rem;
+			line-height: 1.5;
+			font-weight: bold;
+		}
+	
+		#cover-btn{
+			margin-left: 4.5rem;
+			padding: 10px 20px; /* Add some padding */
+			cursor: pointer; /* Add a pointer cursor on mouse-over */
+			/*width: 10%;*/
+			float: left;
+			font-family: Calibri, sans-serif;
+			font-weight: bolder;
+			background-color: #0099CB;
+			font-size: 18px;
+			border: none;
+			border-radius: 5px;
+			color: white;
+		}
+		.org{
+			display:grid;
+      /* grid-template-columns:1fr 1fr 1fr;*/
+      grid-template-columns:repeat(1, 1fr);
+     /* grid-gap:1em;*/
+      /* grid-auto-rows:100px; */
+      grid-auto-rows: minmax(100px, auto);
+		}
+		.orgs >  h2{
+			padding-left: 17rem;
+		}
+		.orgs >  p{
+			padding-left: 17rem;
+			padding-right: 17rem;
+		}
+		/*#orgHeading{
+			
+			margin-left: 6rem;
+			margin-top: 7rem;
+
+		}
+		#orgPara{
+			line-height: 1.3;
+			margin: 25px 80px 25px 80px;
+			font-weight: bold;
+		}
+*/
+		.card{
+			width: 25%;
+			display: inline;
+			background-color: white;
+
+		}
+
+				* {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+
+	
+
+		/* Style the counter cards */
+		/*.row{
+			 display:grid;
+
+		      grid-template-columns:repeat(3, 1fr);
+		      grid-gap:1em;
+
+		      grid-auto-rows: minmax(100px, auto);
+		      background-color: #eee;
+		     
+
+		}
+		
+		.row > div{
+	      background:#eee;
+	      padding-left:3em;
+	      padding-right:3em;
+	      padding-top: 3rem;
+
+	     text-align: center;
+	    }
+	    .row > div:nth-child(odd){
+	      background:#ddd;
+	    }
+
+	    .card {
+			border: 2px solid #e7e7e7;
+			border-radius: 4px;		 
+			padding: .5rem;
+		 
+		}*/
+
+	.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #eeee;
+    justify-content: center;
+    padding: 4rem;
+    border: 10px solid #E3E3E1;
+  }
+  .card {
+    flex: 0 0 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  } 
+  .card img {
+    max-width: 100%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+  }
+  .card .text > a {
+   /* background: gray;*/
+    border: 0;
+    color: #30A7D2;
+    padding: 10px;
+    width: 100%;
+    }
+		 
+   .forth{
+   			 display:grid;
+      grid-template-columns:repeat(1, 1fr);
+      /*grid-gap:1em;*/
+
+      /*
+      grid-column-gap:1em;
+      grid-row-gap:1em;
+      */
+      /*grid-gap:1em;*/
+   }
+  .text-one{
+	      background:white;
+	    }
+	.text-one > h2{
+	     margin: 50px 0 20px 80px;
+	     padding-left: 11.5rem;
+	    }
+	.text-one > p{
+	      margin: 25px 50px 34px 80px;
+	      padding-left: 11.5rem;
+	      padding-right: 11.5rem;
+	      justify-content: center;
+	    }
+    .forth-g{
+    	text-align: center;
+    	background-color: white;
+    }
+		
+	.text-two{
+			background-color: white;
+		}
+    .text-two>p{
+
+    	margin: 32px 160px 11px 130px;
+    	padding-left: 8.5rem;
+    	padding-right: 4rem;
+    	line-height: 1.5;
+    }
+
+    .forth-three{
+    	background-color: white;
+    	text-align: center;
+    }
+
+    /*.forth-four{
+    	 display:grid;
+       grid-template-columns:1fr 1fr 1fr;
+      grid-template-columns:repeat(4, 1fr);
+      grid-gap:1em;
+       grid-auto-rows:100px;
+      grid-auto-rows: minmax(100px, auto);
+    }
+    .forth-four > div{
+    	background-color: white;
+    	text-align: center;
+    	padding: 5rem;
+
+
+    }
+    .forth-four > div >  img{
+    	border-radius: 50%;
+    	width: 100px;
+    	height: 100px;
+    	margin-top: 40px;
+    }
+*/
+	.forth-four{
+		display: flex;
+		justify-content: center;
+	}
+	.forth-four > div{
+		width: 16%;
+		padding-bottom: 10rem;
+		margin-top: 2em;
+	}
+	.forth-four > div > img{
+		border-radius: 50%;
+		width: 68%;
+		height: 95%;
+		/*margin-left: 2em;*/
+	}
+
+    .second-cards {
+	    display: flex;
+	    flex-wrap: wrap;
+	    align-items: center;
+	    background-color: #eeee;
+	    justify-content: center;
+	    padding: 3rem;
+	    background-color: #BBD00E;
+	    border: 10px solid #CFDD52;
+  }
+  .second-card {
+    flex: 0 0 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: white;
+  } 
+  .second-card img {
+    max-width: 100%;
+  }
+  .second-card .text {
+    padding: 0 20px 20px;
+  }
+  .second-card .text > a {
+   /* background: gray;*/
+    border: 0;
+    color: #30A7D2;
+    padding: 10px;
+    width: 100%;
+    }
+
+
+   .fifth{
+   	  display:grid;
+      /* grid-template-columns:1fr 1fr 1fr;*/
+      grid-template-columns:repeat( 1fr);
+      /*grid-gap:1em;*/
+      /* grid-auto-rows:100px; */
+      grid-auto-rows: minmax(40px, auto);
+   }
+   .fifth > div{
+   	background-color: #585858;
+  	padding-top: 10px;
+   	text-align: center;
+   }
+   .fifth > div > label{
+   		padding-left: 3rem;
+   			color:white;
+   			font-family: Calibri, sans-serif;
+			font-weight: bolder;
+			font-size: 18px;
+			
+   }
+
+   .footer-head{
+   	display: flex;
+   	background-color: #6B6B6B;
+   }
+   .footer-head > div{
+   	/*border: 1px solid;*/
+   	width: 41%;
+   	text-align: center;
+   	margin-top: 2em;
+   	color: white;
+   }
+
+   .footer-body{
+   	display: flex;
+   	justify-content: center;
+   	background-color: #6B6B6B;
+   }
+   .footer-body > div{
+   	width: 14.3%;
+   	padding: 1rem;
+   	color: white;
+   	line-height: 1.5;
+
+   }
+    /*.footer{
+      display:grid;
+      grid-template-columns:repeat(5, 1fr);
+      grid-auto-rows: 50px;
+      grid-gap:1em;
+       grid-auto-rows: minmax(100px, auto);
+      padding-top: 2rem;
+      padding-left: 5rem;
+      padding-right: 8rem;
+      padding-bottom: 4rem;
+      background-color: #666666;
+    }
+
+    .footer > div{
+      /*border:#333 1px solid;
+      padding:1em;
+      line-height: 2;
+      color: white;
+    }*/
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<button class="navBtn">REQUEST INFO</button>
+		<ul class="navList">
+			<li class="fist-li"><a href="">CHAT</a></li>
+			<li  class="fist-li"><a href="">800-609-8974</a></li>
+			<li  class="fist-li">
+				<select class="fist-select" id="cars" >
+				  <option class="select-selected" value="volvo">Login</option>
+				  <option value="saab">Signup</option>
+				</select>
+			</li>
+			<li  class="fist-li" id="search"><a  href="">&#9906	</a></li>
+		</ul>
+	</div>
+
+	<div style="clear: both"></div>
+	<div class="select-nav">
+		<ul class="select-ul">
+			<li class="select-li">
+				<select  class="second-select" id="cars" >
+				  <option class="select-selected" value="volvo">Programs</option>
+				  <option value="saab">Signup</option>
+				</select>
+			</li>
+			<li class="select-li">
+				<select class="second-select" id="cars" >
+				  <option class="select-selected" value="volvo">Tuition</option>
+				  <option value="saab">Signup</option>
+				</select>
+			</li>
+			
+			<li class="select-li"> <img src="icon.png" width="30px" height="30px"></li>
+			
+			<li class="select-li">
+				<select class="second-select" id="cars" >
+				  <option class="select-selected" value="volvo">Admissions</option>
+				  <option value="saab">Signup</option>
+				</select>
+			</li>
+			<li class="select-li">
+				<select class="second-select" id="cars" >
+				  <option class="select-selected" value="volvo">Why Phoenix</option>
+				  <option value="saab">Signup</option>
+				</select>
+			</li>
+		</ul>
+	</div>
+
+	<div style="clear: both"></div>
+
+	<div class="cover">
+		<div class="cover-one">
+			<img src="1.jpg" width="92%" height="aute%">
+		</div>
+		<div class="cover-one two">
+			<h1 id="test">Your talent is your strangth</h1>
+			<p id="para">invest in your people, invest in your success. <br> Call us at 866.955.5515</p>
+			<button id="cover-btn">REQUEST INFO &#10140;</button>
+			<br>
+		</div>
+	</div>
+<div style="clear: both"></div>
+	<div class="org">
+		<div class="orgs">
+			<h2 id="orgHeading">An organiztion's most competitive asset is it people</h2>
+			<p id="orgPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor <br> in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. 	<br><br> Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <br>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. 
+			</p>
+			<br>
+		</div>
+ 	</div>
+
+<div style="clear: both;"></div>
+
+<!-- <div class="row">
+  <div class="column">
+    <div class="card">
+		<img src="1.jpg" alt="Avatar" style="width:100%">
+		<div class="container">
+			<h4><b>John Doe</b></h4>
+			<p>Architect & Engineer</p>
+		</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">		
+    	<img src="1.jpg" alt="Avatar" style="width:100%">
+		<div class="container">
+			<h4><b>John Doe</b></h4>
+			<p>Architect & Engineer</p>
+		</div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+    	<img src="1.jpg" alt="Avatar" style="width:100%">
+		<div class="container">
+			<h4><b>John Doe</b></h4>
+			<p>Architect & Engineer</p>
+		</div>
+    </div>
+  </div>
+</div> -->
+<main class="cards">
+  <article class="card">
+    <img src="1.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Lorem ipsum dolor sit amet,</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      </p>
+      <a href="">link to source</a>
+    </div>
+  </article>
+  <article class="card">
+    <img src="1.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Lorem ipsum dolor sit amet,</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      </p>
+      <a href="">Link to source</a>
+    </div>
+  </article>
+  <article class="card">
+    <img src="1.jpg" alt="Sample photo">
+    <div class="text">
+      <h3>Lorem ipsum dolor sit amet,</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      </p>
+      <a href="">Link to source</a>
+    </div>
+  </article>
+  </main>
+  <div class="forth">
+  	<div class="text-one">
+  		<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</h2>
+  		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  	</div>
+  	<div class="forth-g">
+  		<img src="g.jpg" width="94%">
+  	</div>
+  	<div class="text-two">
+  		<p><strong>Lorem ipsum dolor sit amet -</strong>, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. </p>
+  	</div>	
+  	<div class="text-two">
+  		<p><strong>Lorem ipsum dolor sit amet -</strong>, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. </p>
+  	</div>	
+  	<div class="text-two">
+  		<p><strong>Lorem ipsum dolor sit amet -</strong>, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. </p>
+  	</div>	
+  	<div class="text-two">
+  		<p><strong>Lorem ipsum dolor sit amet -</strong>, consectetur adipisicing elit, sed do eiusmod
+  		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  		consequat. </p>
+  	</div>
+
+  	<div class="forth-three">
+  		<h1>We understand your workforce</h1>
+  		<label>Our network over 10,000000 student and alumni are part of your workforce today</label>
+  	</div>
+
+  	<div class="forth-four">
+  		<div>
+  			<img src="2.jpg" class="img-circle" >
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+  			</p>
+  		</div>
+  		<div>
+  			<img src="2.jpg" class="img-circle" >
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  			</p>
+  		</div>
+  		<div>
+  			<img src="2.jpg" class="img-circle" >
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+  			</p>
+  		</div>
+  		<div>
+  			<img src="2.jpg" class="img-circle" >
+  			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+  			</p>
+  		</div>
+  	</div>	
+  </div>
+
+ <div class="second-cards">
+ 	<div class="second-card">
+ 		<img src="1.jpg" alt="Sample photo">
+	    <div class="text">
+	      <h3>Lorem ipsum dolor sit amet,</h3>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      </p>
+	      <a href="">Download PDF &#10140;</a>
+	    </div>
+ 	</div>
+ 	<div class="second-card">
+ 		<img src="1.jpg" alt="Sample photo">
+	    <div class="text">
+	      <h3>Lorem ipsum dolor sit amet,</h3>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      </p>
+	      <a href="">Download PDF &#10140;</a>
+	    </div>
+ 	</div>
+ 	<div class="second-card">
+ 		<img src="1.jpg" alt="Sample photo">
+	    <div class="text">
+	      <h3>Lorem ipsum dolor sit amet,</h3>
+	      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	      </p>
+	      <a href="">Download PDF &#10140;</a>
+	    </div>
+ 	</div>
+ </div> 
+  
+ <div class="fifth">
+ 	<div class="fifth-one">
+ 			<label>&#9990; 794.454.4544</label>
+ 			<label>&#8505; REQUEST INFO</label>
+ 			<label>@ LIVE CHAT</label>
+ 	</div>
+ </div>
+
+ <div class="footer-head">
+ 	<div>
+ 		<img src="4.png" width="50px" style="margin-bottom: -2em;">
+ 		<h1>University <br> of Phoenix</h1>
+    </div>
+ </div>
+
+ <div class="footer-body">
+ 	<div>
+ 		
+ 		<h3>NEXT STEPS:</h3>
+ 		<label>890.899.8016</label>
+ 		<br>
+ 		<label>Request Information</label>
+ 		<br>
+ 		<label>Live Chat</label>
+ 		<br>
+ 		<br>
+ 		<br>
+ 		<h3>CONNECT:</h3>
+ 		<label>Facebook</label><br>
+ 		<label>Twitter</label><br>
+ 		<label>LinkedIn</label><br>
+ 		<label>Youtube</label><br>
+ 		<label>Google</label><br>
+
+
+ 	</div>
+ 	<div>
+ 		
+ 		<h3>INFORMATION FOR:</h3>
+ 		<label>Alumni</label><br>
+ 		<label>Continuing Education</label><br>
+ 		<label>Employers</label><br>
+ 		<label>Faculty</label><br>
+ 		<label>Family Members</label><br>
+ 		<label>International</label><br>
+ 		<label>Military</label><br>
+ 		<label>Transfer Students</label><br>
+
+ 	</div>
+ 	<div>
+ 		
+ 		<h4>COLLEGE AND SCHOOLS</h4>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 	</div>
+ 	<div>
+ 		
+ 		<h3>ABOUT US:</h3>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>School of Business</label><br>
+ 		<label>College of Health Professions</label><br>
+ 	</div>
+ 	<div>
+ 		
+ 		<h3>POLICIES AND DISCLOSURES</h3>
+ 		<label>Privacy Policy</label><br>
+ 		<label>Website Terms and Conditions</label><br>
+ 		<label>Accessibility Policy</label><br>
+ 		<label>Privacy Policy</label><br>
+ 		<label>Website Terms and Conditions</label><br>
+ 		<label>Accessibility Policy</label><br>
+ 		<label>College of Health Professions</label><br>
+ 		<label>Privacy Policy</label><br>
+ 		<label>Website Terms and Conditions</label><br>
+ 		<label>Accessibility Policy</label><br>
+ 	</div>
+ </div>
+</body>
+</html>
