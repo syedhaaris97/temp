@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>1st template</title>
+	<style type="text/css">
+	body {
+  font-family: sans-serif, monospace;
+  margin: 0;
+  padding: 0;
+}
+	html, body {
+
+	height: 100%;
+
+	padding: 0;
+
+	margin: 0;
+
+	}
+
+.nav{
+	height: 8%;
+			padding: 0;
+			margin: 0;
+
+}
+nav{
+	margin: 10px 50px 10px 50px;
+	background-color: #FEFEFF;
+}
+		.logo{
+			display: inline-block;
+			border: solid;
+			background: #6DC054;
+			border-color: white;
+			color: white;
+			font-weight: bold;
+			padding: 10px 35px 10px 35px;
+			
+		}
+		li,a{
+			float: left;
+			display: inline;
+			padding: 10px;
+			font-weight: bold;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: black;
+		}
+		.contact{
+			float: right;
+			text-align: right;
+			font-size: 25px;
+			font-weight: bold;
+			color: #76A367;
+			/*margin-top: -50px;*/
+		}
+		.nav-list{
+			margin-left: 100px;
+			margin-top: -60px;
+			text-decoration: none;
+		}
+		.slider-section{
+			background-color:  #6DC054;
+			height: 90vh;
+			padding: 0;
+			margin: 0;
+		}
+		.content-body{
+			font-family: "Arial Black", Verdana, sans-serif;
+			font-size: 45px;
+			font-weight: bolder;
+			position: absolute;
+		  	top: 50%;
+		  	left: 50%;
+		 	transform: translate(-50%, -50%);
+		 	color: white;
+		 	text-align: center;
+		 	line-height: 1;
+		}
+		.pre{
+			width: 40px;
+			/*height: 15px;*/
+
+			/*border: 1px solid green;
+			border-color: #6DC054;
+			background-color: white;*/
+			padding: 2px;
+			padding-top: -3px;
+			margin: 20px;
+			font-size: 35px;
+			position: absolute;
+			top: 50%;
+		  	/*right:2%;*/
+		 	transform: translate(50%, -50%);
+		 	 border-radius: 0px 15px 15px 0px;
+		}
+		.pre a{
+			border: 1px solid;
+			background-color: white;
+		}
+		.pre a:hover{
+  			box-shadow: 2px 2px #888888;
+  			opacity: 0.4;	
+		}
+		.next{
+
+			width: 40px;
+			/*height: 45px;*/
+
+			/*border: 1px solid green;
+			border-color: #6DC054;
+			background-color: white;
+*/
+			padding: 2px;
+			padding-top: -3px;
+			margin: 20px;
+			font-size: 35px;
+			position: absolute;
+			top: 50%;
+		  	right:2%;
+		 	transform: translate(50%, -50%);
+		 	 border-radius: 15px 0px 0px 15px;
+		 	
+		}
+		.next a{
+			border: 1px solid;
+			background-color: white;
+		}
+		.next a:hover{
+  			box-shadow: 2px 2px #888888;
+  			opacity: 0.4;	
+		}
+		.next a,.pre a{
+			color: grey;
+		}
+		.note{
+			font-family: "Time new roman", Verdana, serif;
+			font-size: 30px;
+			font-weight: normal;
+			margin-top: -4px;
+		}
+		.form-section{
+			text-align: center;
+			line-height: 1;
+			height: 70vh;
+		}
+		input[type=text] {
+			/*margin: auto;*/
+			display: block;
+			left: 50%;
+		  width: 25%;
+		  padding: 12px 20px;
+		  margin: 8px 600px 10px;
+		  box-sizing: border-box;
+		  border: 2px solid #35573E;
+
+		}
+		::placeholder {
+		  color: #90C17E;
+		  font-size: 15px;
+		  padding: 2px;
+		  font-weight: bold;
+		  text-transform: uppercase;
+		}
+		.button {
+		  background-color: #4CAF50; /* Green */
+		  border: none;
+		  color: white;
+		  padding: 15px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		}
+		.reguest{
+			font-family: "Arial Black", Verdana, sans-serif;
+			font-size: 40px;
+			font-weight: bolder;
+			color: #35573E;
+		}
+		* {
+			  box-sizing: border-box;
+			}
+
+		.column{
+		  float: left;
+		  width: 50%;
+		  background-color: #6DC054;
+		  padding: 10px;
+		/*  height: 100%;*/ /* Should be removed. Only for demonstration */
+		  margin-bottom: 5rem;
+		}
+
+	/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		  margin-bottom: -15rem;
+		}
+
+		#colone{
+			font-family: "Arial Black", Verdana, sans-serif;
+			font-size: 40px;
+			font-weight: bolder;
+			color: white;
+			text-align: center;
+			margin-top: 10rem;
+			line-height: 1;
+			/*margin-bottom: 5rem;*/
+		}
+		#colonelabel{
+			font-size: 30px;
+			text-align: center;
+			color: white;
+			margin-left: 20rem;
+			line-height: 0.5;
+		}
+		#coltwo{
+			margin: 35px 35px 25px 50px;
+			font-family: "Arial Black", Verdana, sans-serif;
+			font-size: 40px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			color: #35573E;
+
+		}
+		#coltwop{
+			margin-left: 3rem;
+			margin-right: 10rem;
+			line-height: 2;
+			color:white;
+			/*margin-bottom: 5rem;*/
+		}
+		  .colum {
+
+		  float: left;
+		  width: 25%;
+		  text-align: center;
+		}
+		
+		#num{
+			font-family: "Arial Black", Verdana, sans-serif;
+			font-size: 50px;
+			text-transform: uppercase;
+			font-weight: bolder;
+			color: #6DC054;
+			line-height: 1;
+		}
+		#sub{
+			font-family: "Arial Black", Verdana, sans-serif;
+			text-transform: uppercase;
+			font-weight: bolder;
+			color: #35573E;
+			line-height: 1;
+		}
+
+		#para{
+			margin-left: 2rem;
+			margin-right: 2rem;
+		}
+
+		.footer{
+			position: relative;
+			background-color: #6DC054;
+			margin-top: 32rem;
+		}
+
+		.connect {
+		  background-color: white; /* Green */
+		  border: none;
+		  color: #96BA81;
+		  width: 10rem;
+		  font-weight: bold;
+		  padding: 15px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin-top: 30px;
+		  margin-left: 30px;
+		  margin-bottom: 25px;
+		}
+		#number{
+			float: right;
+			text-align: right;
+			font-size: 30px;
+			margin-top: 1.5rem;
+			margin-right: 5rem;
+			font-family: "Arial Black", Verdana, sans-serif;
+			text-transform: uppercase;
+			font-weight: bolder;
+			color: #35573E;
+			line-height: 1;
+		}
+	</style>
+</head>
+<body>
+<div class="nav">
+	<nav>
+		<div class="logo">
+			<label>	170x45</label>
+		</div>
+		<div class="nav-list">
+			<ul>
+				<li><a href="#">Menu 1</a></li>
+				<li><a href="#">Menu 2</a></li>
+				<li><a href="#">Menu 3</a></li>
+			</ul>
+		</div>
+		<div class="contact">
+			<label>Call Now</label><br>
+			<label>+001 003 005</label>
+		</div>
+	</nav>
+</div>
+	
+
+	<div class="slider-section">
+		<div class="pre"><a href="">&#10096;</a></div>
+		<div class="next"><a href="">&#10097;</a></div>
+		<div class="content-body">
+			
+			<label>CHANGE YOUR <br>SLIDER IMAGE</label><br><label class="note">1300X670 px</label>
+		</div>
+	</div>
+
+	<div class="form-section">
+		<br>
+		<br>
+		<div class="heading">
+			<h3 class="reguest">REQUEST <br>YOUR BUDGET	</h3> 
+			<label>Lorem ipsum dolor sit amet Lorem ipsum dolor,
+			</label>
+		</div>
+		<div class="form">
+			<form>
+				<input type="text" name="" placeholder="Name">
+				<input type="text" name="" placeholder="phone">
+				<input type="text" name="" placeholder="Email">
+				<button class="button">SEND</button>
+				</form>
+		</div>
+	</div>
+
+	<!-- <div class="tow-col"> -->
+		<div class="row">
+			  <div class="column" >
+			    <h2 id=colone>CHANGE <br>  YOUR IMAGE <br></h2>
+			    <label id="colonelabel">650x565 px</label>
+			    <p><br><br><br><br><br><br></p>
+			    <br>
+			    <br>
+			    <br>	
+			  </div>
+			  <div class="column" >
+			     <h2 id=coltwo>Lorem ipsum <br> dolor sit <br>amet, </h2>
+			    <p id="coltwop">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			    <br>
+			    <br>
+			    <br>
+			  </div>
+		</div>
+
+	<div class="rows">
+		  <div class="colum">
+		  	<h1 id="num">01</h1>
+		  	<h2 id="sub">Lorem ipsum <br>dolor sit amet</h2>
+		  	<p id="para"  align="justify" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 	sdso</p>
+		  </div>
+		  <div class="colum">
+		  	<h1 id="num">02</h1>
+		  	<h2 id="sub">Lorem ipsum <br>dolor sit amet</h2>
+		  	<p id="para"  align="justify" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 	sdso</p>
+		  </div>
+		  <div class="colum">
+		  	<h1 id="num">03</h1>
+		  	<h2 id="sub">Lorem ipsum <br>dolor sit amet</h2>
+		  	<p id="para"  align="justify" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 	sdso</p>
+		  </div>
+		  <div class="colum">
+		  	<h1 id="num">04</h1>
+		  	<h2 id="sub">Lorem ipsum <br>dolor sit amet</h2>
+		  	<p id="para"  align="justify" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 	sdso</p>
+		  </div>
+	</div>
+
+	<div class="footer">
+			<footer>
+				<button class="connect">Connect</button>
+				<div id="number">
+					<label >Call Now</label><br>
+			<label>+001 003 005</label>
+
+				</div>
+				
+			</footer>
+	</div>
+	<!-- </div> -->
+</body>
+</html>
