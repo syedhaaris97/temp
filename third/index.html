@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3rd template</title>
+	<style type="text/css">
+	body{
+		margin: 0;
+	}
+	.header{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: #186F82;
+		box-sizing: border-box;
+		padding:  30px;
+		color:#fff;
+		margin-bottom:170px;
+	}
+	.header:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: top right;
+		transform: skewY(-6deg);
+		/*margin-bottom: 150px;*/
+		
+	}
+
+
+	.headerA{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: #F6F9FC;
+		box-sizing: border-box;
+		padding:  30px;
+		color:black;
+		margin-bottom:100px;
+		padding-bottom: 6rem;
+	}
+	.headerA:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		transform: skewY(-6deg);
+		/*margin-bottom: 150px;*/
+		
+	}
+
+	.headerA{
+		display: flex;
+		justify-content: center;
+	}
+	.headerA > div{
+		width: 30%;
+
+	}
+	.card{
+		 box-shadow: 2px 4px 12px 0px  rgba(0,0,0,0.3);
+		 background-color: white;
+		 z-index: 3;
+	}
+	
+	.card img {
+    max-width: 20%;
+
+   
+  }
+  
+
+
+	.nav{
+		display: flex;
+		justify-content: center;
+	}
+	.nav > div{
+		margin-top: -20px;
+		/*border: 1px #ccc solid;*/
+		width: 35%;
+		padding-left: 1rem;
+		color: white;
+	}
+	
+	.cover{
+		display: flex;
+		justify-content: center;
+
+	}
+	.cover > div{
+		position: relative;
+		width: 40%;
+		z-index: 1;
+	}
+
+
+/*	.mid{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: #186F82;
+		box-sizing: border-box;
+		
+		display: flex;
+		z-index: -1;
+		
+		 
+	}*/
+	/*.mid:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: pink;*/
+		/*z-index: -1;*/
+		/*top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;*/
+		/*transform-origin: top right;
+		transform: skewY(-6deg);
+
+
+
+	}*/
+	/*.mid{
+		margin-top: 100px;
+		height: 200px;
+		width: 100%;
+		position: absolute;
+		background-color: pink;*/
+	/*	transform: skewY(-6deg);
+		transform-origin: top right;*/
+		
+	}
+
+
+		.asymmetric {
+		 position: relative;
+		 background-color:  #186F82;
+
+		}
+		.asymmetric{
+			display: flex;
+			justify-content: center;
+
+		}
+		.asymmetric > div{
+			width: 20%;
+			z-index: 2;
+			margin-top: -80px;
+			color:white;
+		}
+
+		.asymmetric::before {
+		margin-top: -100px;
+		 position: absolute;
+		 content: "";
+		 width: 100%;
+		 height: 60%;
+		/* top: 0;
+		 left: 0;*/
+		 background-color: #186F82;
+		 transform-origin: top left;
+		 transform: skewY(-5deg);
+		 z-index: 1;
+		}
+
+	 .work{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: pink;
+		box-sizing: border-box;
+		padding:  30px;
+		color:black;
+		margin-bottom:100px;
+		padding-bottom: 6rem;
+		margin-top: 220px;
+	}
+	.work::after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		transform: skewY(-5deg);
+		/*margin-bottom: 150px;*/	
+	}
+
+	.work{
+		display: flex;
+		justify-content: center;
+		background-color: #F6F9FC;
+	}
+	.work > div{
+		width: 31%;
+		z-index: 1;
+		
+	}
+	.work > div, #workHeading{
+		font-family: Calibri, sans-serif;
+		line-height: 0.5;
+	}
+	.work > div, ul{
+		font-family: Calibri, sans-serif;
+		line-height: 1.2;
+	}
+	#applyBtn{
+
+		    width: 22em;
+		    height: 3em;
+		    border-radius: 6px;
+		    background-color: #E5484B;
+		    color: white;
+		    font-weight: bolder;
+		    border: none;
+	}
+
+	.nomial{
+		background-color: #186F82;
+		/*height: 100px;*/
+		margin-top: -100px;
+		display: flex;
+		justify-content: center;
+
+
+	}
+
+	.nomial > div{
+		width: 50%;
+		margin-top: 50px;
+		font-family: Calibri, sans-serif;
+		color: white;
+	}
+	.feedback{
+		background-color: #186F82;
+		display: flex;
+		height: 250px;
+		justify-content: center;
+		/*justify-content: space-around;*/
+	}
+	.feedback > div{
+		width: 18%;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		font-family: Calibri, sans-serif;
+		color: white;
+	}
+
+	.client{
+		background-color: #186F82;
+		display: flex;
+		justify-content: center;
+		/*justify-content: space-around;*/
+	}
+	.client > div{
+		width: 25%;
+		font-family: Calibri, sans-serif;
+		color: white;
+		/*padding: 2rem;*/
+	}
+
+	.service{
+		display: flex;
+		background-color: #F6F9FC;
+		justify-content: center;
+
+	}
+	.service > div{
+		width: 10%;
+	}
+	.service > div img{
+		border-radius: 50%;
+		width: 30%;
+		height: 35%;
+	}
+	.serviceHeader{
+		display: flex;
+		background-color: #F6F9FC;
+		justify-content: center;
+
+	}
+	.serviceHeader > div{
+		width: 25%;
+		font-family: Calibri, sans-serif;
+		margin-top: 50px;
+
+	}
+	.serviceBtn{
+		display: flex;
+		justify-content: center;
+		background-color: #F6F9FC;
+	}
+	.serviceBtn > div{
+		width: 40%;
+		height: 100px;
+	}
+
+	#serviceBtn{
+
+		    width: 45em;
+		    height: 3em;
+		    border-radius: 6px;
+		    background-color: #E5484B;
+		    color: white;
+		    font-weight: bolder;
+		    border: none;
+	}
+	.footer{
+		display: flex;
+		justify-content: center;
+		background-color: #186F82;
+		color: white;
+	}
+	.footer > div{
+		
+		width: 10%;
+	}
+
+	.footer-list{
+		display: flex;
+		justify-content: center;
+		background-color: #186F82;
+		color: white;
+	}
+	.footer-list > div{
+		margin-top: -20px;
+		width: 7%;
+		
+		
+	}
+	</style>
+</head>
+<body>
+<div class="header">
+	<div class="nav">
+				<img src="icon.png" width="40px" height="40px">
+		<div>
+			<h3>IRON CAPITAL <br>G R O U P</h3>
+		</div>
+		<div>
+			<h3 style="float: right; clear: both;" >Contact Us <br>023.34.23.33</h3>
+		</div>
+	</div>
+	<div style="clear: both;">	</div>
+	<div class="cover">
+		<div> 
+			<img id="workImg" src="eng.jpg">
+		</div>
+		<div>
+			<h1 style="font-size: 60px; color: white;"> We'll help you fund your future</h1>
+			<div style="font-size: 24px; color: white;" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</div>
+		</div>
+
+	</div>
+</div>
+
+
+<div class="headerA">
+	<div><h1>HOW DOES IT WORK?</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. </p>
+	</div>
+	<div class="card">
+	    <video width="440" height="260" controls style="padding: 4px;">
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+	</div>
+</div>
+
+<div class="asymmetric">
+	<div><h2>Lorem ipsum dolor sit amesdss,</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Utsds enim ad minim veniam,
+	quis nostrud exercitationsdads ullamco laboris nisi ut aliquipsdad ex ea commodo
+	consequat. .</div>
+	<div><h2>Lorem ipsum dolor sit amesdss,</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Utsds enim ad minim veniam,
+	quis nostrud exercitationsdads ullamco laboris nisi ut aliquipsdad ex ea commodo
+	consequat. .</div>
+	<div><h2>Lorem ipsum dolor sit amesdss,</h2>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Utsds enim ad minim veniam,
+	quis nostrud exercitationsdads ullamco laboris nisi ut aliquipsdad ex ea commodo
+	consequat. .</div>
+</div>
+
+<div class="work">
+	<div><img src="eng2.jpg" width="350px" style="margin-top: -120px; background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></div>
+	<div><h1 id="workHeading">YOUR FUTURE AWAITS.</h1>
+		<h3>List Insdustries we've helped fund:</h3>
+		<ul>
+			<li>Construction</li>
+			<li>Masonry</li>
+			<li>Welding</li>
+			<li>Carpentry</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>And more!</li>
+		</ul>
+		<button id="applyBtn">APPLY NOW</button>
+	</div>
+</div>
+
+<div class="nomial">
+		<div class="nomial-box1"><h3>Real Reviews from Real Customers</h3>
+			<hr>
+		</div>
+		
+</div>
+<div class="client">
+			<div><h3>Iron Capital Deliver</h3></div>
+			<div><h3>Great Customer Service they helped me</h3></div>
+
+</div>
+<div class="feedback">
+			<div><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. </em></div>
+			<div><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. </em></div>
+</div>
+
+<div class="serviceHeader">
+	<div><h1>We can help you with..</h1></div>
+</div>
+
+<div class="service">
+
+	<div>	
+  			<img src="2.png" class="img-circle" >
+  			<p>Lorem ipsum dolor sit , 
+  			</p>
+  		</div>
+  		<div>
+  			<img src="2.png" class="img-circle" >
+  			<p>Lorem ipsum dolor
+  			</p>
+  		</div>
+  		<div>
+  			<img src="2.png" class="img-circle" >
+  			<p>Lorem ipsum dolor sit
+  			</p>
+  		</div>
+  		<div>
+  			<img src="2.png" class="img-circle" >
+  			<p>Lorem ipsum dolor sit amet,
+  		</div>
+  		<div>
+  			<img src="2.png" class="img-circle" >
+  			<p>Lorem ipsum dolor sit amet,
+  		</div>
+</div>
+
+<div class="serviceBtn">
+	<div><button id="serviceBtn">APPLY NOW</button></div>
+</div>
+
+<div class="footer">
+	<div>
+			<img src="icon.png" width="40px" height="40px" style="padding-left: 5rem; padding-top: 1.3rem; ">
+	</div>
+	<div>
+		<h4>IRON CAPITAL <br>G R O U P</h4>
+	</div>
+</div>
+
+<div class="footer-list">
+	<div>
+		<h6>PARTNERS</h6>
+	</div>
+	<div><h6>ABOUT US</h6></div>
+	<div><h6>CREDIT PROGRAM</h6></div>
+</div>
+</body>
+</html>
