@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4th template</title>
+
+	<style type="text/css">
+	body{
+		margin: 0;
+	}
+		.contact-bar{
+			display: flex;
+			justify-content: flex-start;
+			background-color:white;
+		}
+		.contact-bar > div{
+			width: 45%;
+			text-align: center;
+		}
+		#contact-no > li{
+			display: inline-block;
+		}
+		
+		.menus{
+			display: flex;
+			justify-content: flex-end;
+			background-color: white;
+   			 box-shadow: 0 6px 9px -8px black;
+		}
+		.menus div{
+			width: 45%;
+			/*border: 1px #ccc solid;*/
+			margin-right: 200px;
+
+		}
+		#list > li{
+			display: inline-block;
+			padding: 5px;
+			font-family: Calibri, sans-serif;
+			font-weight: bold;
+			font-size: 18px;
+
+		}
+		#num-note{
+			font-family: Calibri, sans-serif;
+			font-weight: bold;
+			font-size: 18px;
+		}
+		#num{
+			font-family: Calibri, sans-serif;
+			font-weight: bold;
+			font-size: 18px;
+			color:#A12FB7;
+		}
+		#menuBtn{
+			height: 33px;
+		    width: 150px;
+		    border-radius: 20px;
+		    font-family: Calibri, sans-serif;
+		    font-weight: bold;
+		    border: none;
+		    background-color: #AA4CBA;
+		    color: white;
+		}
+
+
+		.cover{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: #DF5BB4;
+		box-sizing: border-box;
+		padding:  30px;
+		color:#fff;
+		margin-bottom:170px;
+	background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 0, 255, 0.5), 
+      rgba(255, 0, 255)
+    ),
+    /* bottom, image */
+   url(doc.jpg);
+		background-position: center;
+	}
+	.cover:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: top right;
+		transform: skewY(-6deg);
+		/*margin-bottom: 150px;*/
+	}
+	.cover{
+		display: flex;
+		justify-content: center;
+	}
+	.cover > div{
+		/*border: 1px #ccc solid;*/
+		 color: black;
+		 z-index: 1;
+		 width: 40%;
+		 padding-left: 250px;
+	}
+	#callBtn{
+		height: 50px;
+		width: 130px;
+		font-family: Calibri, sans-serif;
+	    font-weight: bold;
+	    font-size: 22px;
+	    border-radius: 30px;
+	    border: none;
+	    background-color: #5D6DBE;
+	    color: white;
+	     box-shadow: 2px 6px 9px -3px black;
+	}
+	#emailBtn{
+		height: 50px;
+		width: 130px;
+		font-family: Calibri, sans-serif;
+	    font-weight: bold;
+	    font-size: 22px;
+	    border-radius: 30px;
+	    border: none;
+	    background-color: #54143E;
+	    color: white;
+	     box-shadow: 2px 6px 9px -3px black;
+	}
+
+
+	.content-one{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: #F6F9FC;
+		box-sizing: border-box;
+		padding:  30px;
+		color:black;
+		margin-bottom:100px;
+		padding-bottom: 6rem;
+	}
+	.content-one:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		transform: skewY(-6deg);
+		/*margin-bottom: 150px;*/
+		
+	}
+	.content-one{
+		display: flex;
+		justify-content: center;
+		height: 600px;
+	}
+	.content-one > div{
+		width: 25%;
+		margin-top: -50px;
+		padding-right: 20px;
+		padding-left: 20px;
+
+	}
+	.card{
+		 box-shadow: 2px 4px 12px 0px  rgba(0,0,0,0.3);
+		 background-color: white;
+		 height: 400px;
+		 text-align: center;
+		 z-index: 1;
+	}
+	#CardcallBtn{
+		height: 50px;
+		width: 350px;
+		font-family: Calibri, sans-serif;
+	    font-weight: bold;
+	    font-size: 22px;
+	    border-radius: 30px;
+	    border: none;
+	    background-color: #5D6DBE;
+	    color: white;
+	     box-shadow: 2px 6px 9px -3px black;
+	}
+
+		
+		.asymmetric {
+		 position: relative;
+		 background-color:  black;
+		 display: flex;
+			justify-content: center;
+			/*margin-top: 200px;*/
+			height: 500px;
+
+
+		}
+		
+		.asymmetric > div{
+			width: 40%;
+			z-index: 2;
+			/*margin-top: 80px;*/
+			color:white;
+		}
+
+		.asymmetric::before {
+		margin-top: -100px;
+		 position: absolute;
+		 content: "";
+		 width: 100%;
+		 height: 100%;
+		/* top: 0;
+		 left: 0;*/
+		 background-color: black;
+		 transform-origin: top left;
+		 transform: skewY(-3deg);
+		 z-index: 2;
+		}
+		#nowBtn{
+				height: 50px;
+				background-color: #CE54A6;
+				width: 350px;
+				font-family: Calibri, sans-serif;
+			    font-weight: bold;
+			    font-size: 22px;
+			    border-radius: 30px;
+			    border: none;
+			    color: white;
+
+		}
+
+		.service{
+			/*margin-top: 100px;*/
+		position: relative;
+		width: 100%;
+		height: 800px;
+		background-color: #F6F9FC;
+		box-sizing: border-box;
+		padding:  30px;
+		color:black;
+		margin-bottom:100px;
+		padding-bottom: 6rem;
+	}
+	.service:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: 2;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		transform: skewY(-4deg);
+		/*margin-bottom: 150px;*/
+		
+	}
+	.service{
+		display: flex;
+		justify-content: center;
+	}
+	.service > div{
+		width: 31%;
+		z-index: 3;
+	}
+	#service-list{
+		columns: 2;
+	    -webkit-columns: 2;
+	    -moz-columns: 2;
+	    line-height: 1.9;
+	}
+
+	.team{
+		position: relative;
+		width: 100%;
+		height: 400px;
+		background-color: #DF5BB4;
+		box-sizing: border-box;
+		padding:  30px;
+		color:#fff;
+		margin-bottom:170px;
+		margin-top: -100px;
+		   /*background: rgba(223, 91, 180, 0.3); */
+	/*	opacity: 0.3;*/
+	 background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(137, 98, 153, 0.8), 
+      rgba(137, 98, 153, 0.8)
+    ),
+    /* bottom, image */
+   url(doc.jpg);
+		background-position: center;
+	}
+	.team:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: top right;
+		transform: skewY(-6deg);
+		/*margin-bottom: 150px;*/
+	}
+	.team{
+		display: flex;
+		justify-content: center;
+	}
+	.team > div{
+		width: 60%;
+	}
+	#teamcallBtn{
+		height: 50px;
+		width: 250px;
+		font-family: Calibri, sans-serif;
+	    font-weight: bold;
+	    font-size: 18px;
+	    border-radius: 30px;
+	    border: none;
+	    background-color: #5D6DBE;
+	    color: white;
+	     box-shadow: 2px 6px 9px -3px black;
+	}
+	
+		
+	
+	#teamemailBtn{
+		height: 50px;
+		width: 250px;
+		font-family: Calibri, sans-serif;
+	    font-weight: bold;
+	    font-size: 18px;
+	    border-radius: 30px;
+	    border: none;
+	    background-color: #DF5BB4;
+	    color: white;
+	     box-shadow: 2px 6px 9px -3px black;
+	}
+
+
+	.feedback{
+			/*margin-top: 100px;*/
+		position: relative;
+		width: 100%;
+		height: 600px;
+		background-color: #FFF1FA;
+		box-sizing: border-box;
+		padding:  30px;
+		color:black;
+		margin-bottom:100px;
+		padding-bottom: 6rem;
+	}
+	.feedback:after{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: inherit;
+		z-index: 2;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform-origin: left;
+		transform: skewY(-6deg);
+		/*margin-bottom: 150px;*/
+	}
+
+	.feedback{
+		display: flex;
+		justify-content: center;
+
+	}
+	.feedback > div{
+		width: 70%;
+		z-index: 3;
+	}
+	.gridcard{
+		display: grid;
+		grid-template-columns: 30% 65%;
+		grid-gap: 1em;
+	}
+	.gridcard > div{
+		padding-top: 6em;
+
+	}
+	.bottom{
+		margin-top: -100px;
+		height: 600px;
+		padding-bottom: 100px;
+		display: flex;
+		justify-content: center;
+		/*background-color: red;*/
+		background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0.5), 
+      rgba(255, 255, 255, 0.5)
+    ),
+    /* bottom, image */
+   url(baby.png);
+   		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.bottom > div{
+		width: 40%;
+		/*border: 1px #ccc solid;*/	
+		margin-top: 15em;
+		margin-left: 27em;
+		/*padding-left: 2em;*/
+	}
+	.footer-line{
+		background-color: #551D3C;
+		height: 10px;
+	}
+	.footer{
+		display: flex;
+		justify-content: center;
+
+	}
+	.footer > div{
+		width: 10%;
+		padding: 5px;
+		padding-bottom: 3rem;
+	}
+	</style>
+</head>
+<body>
+
+	<div class="contact-bar">
+		<div><img src="logo.png" style="padding-top: 2.5em;  position: absolute;"></div>
+		<div>
+			<ul id="contact-no">
+				<li id="num-note">Call 24/7 FREE:</li>
+				<li id="num">(800) 852-0041</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="menus">
+		<div>
+			<ul id="list">
+				<li>HOME</li>
+				<li>WHY US?</li>
+				<li>WHAT WE OFFER</li>
+				<li>REVIEWS</li>
+				<li><button id="menuBtn">GET HELP NOW</button></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="cover">
+		<div>
+			<h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color: white; text-shadow: 1px 2px 1px #000000;">If you'r any emergency and need immediate help,</h1>
+			<h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; "><em>we are your team!</em></h1>
+			<p style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+			<button id="callBtn">Call us</button> <button id="emailBtn">Email us</button>
+		</div>
+	</div>
+
+	<div class="content-one">
+		<div>
+			<h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:#790481">Need living expenses? We've got you covered.</h1>
+			<p style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color: black;"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. <br> <br>Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="card">
+			<br>
+			<br>
+			<br>
+			<br>
+	    	<h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:#790481">Call Now for Help:</h1>
+	    	<button id="CardcallBtn">CALL US NOW</button>
+	    	<p style="font-family: Calibri, sans-serif;
+			font-weight: bold; color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	    	tempor incididunt ut labore et dolore magna aliqua</p>
+		</div>
+	</div>
+
+<div class="asymmetric">
+	<div><h2 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:#CE54A6; font-size: 46px" >Free support and care for women considering adoption</h2>
+		<p  style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Utsds enim ad minim veniam,
+	quis nostrud exercitationsdads ullamco laboris nisi ut aliquipsdad ex ea commodo
+	consequat. .</p>
+		<button id="nowBtn">GET LIVING EXPENSES NOW</button>
+	</div>
+	
+</div>
+
+<div class="service">
+	<div><img src="doc2.jpg" width="350px" style="margin-top: -120px; background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);"></div>
+	<div><h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:#CE54A6; font-size: 40px"  id="workHeading">Helping medical emergency women in crisis is  best</h1>
+		<!-- <h3>List Insdustries we've helped fund:</h3> -->
+		<ul id="service-list">
+			<li>Construction</li>
+			<li>Masonry</li>
+			<li>Welding</li>
+			<li>Carpentry</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>HVAC</li>
+			<li>Truck Driving</li>
+			<li>Industrial Machinary</li>
+			<li>And more!</li>
+		</ul>
+			<button id="callBtn">Call us</button> <button id="emailBtn">Email us</button>
+	</div>
+</div>
+	
+<div class="team">
+
+	<div>
+		<br><br><br><br>
+		<h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:white; font-size: 40px; color: white;
+  text-shadow: 1px 2px 1px #000000;">We are a team of former BirthMoms, Social Workers and Adoption Attorneys who truly care about you</h1>
+  <center><button id="teamcallBtn">CALL US FOR HELP</button> <button id="teamemailBtn">EMAIL US FOR HELP</button></center>
+</div>
+</div>	
+
+<div class="feedback">
+	<div><h1  style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:white; font-size: 45px; color: #7D3188; text-align: center;
+  ">See how our beautiful BirthMoms feel about being part of our team.</h1>
+<center><label style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:white; font-size: 20px; color: black; text-align: center;
+  ">We've helped hundreds of struggling BirthMoms just like you</label></center>
+  <br>
+  <br>
+  <div class="card gridcard">
+  		<div><img src="user.png">
+  		</div>
+	    <div> 
+	    	<em><q>
+	    		<p style="font-family: Calibri, sans-serif;
+			font-size: 18px; color: black;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	    	</q></em>
+	    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="bottom">
+	<div>
+		<h1 style="font-family: Calibri, sans-serif;
+			font-weight: bolder; color:#551D3C; font-size: 46px; text-indent: 70px; "  >	Don't wait to another minute to get the help you deserve.</h1>
+			<p  style="font-family: Calibri, sans-serif;
+			 color:black; font-size: 18px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Utsds enim ad minim veniam,
+	quis nostrud exercitationsdads ullamco laboris nisi ut aliquipsdad ex ea commodo
+	consequat. .</p>
+	<button id="teamcallBtn">CALL US FOR HELP</button> <button id="teamemailBtn">EMAIL US FOR HELP</button>
+	</div>
+</div>
+<div class="footer-line">
+</div>
+<div class="footer-logo" style="background-color: #FEE3F6;">
+	<center><img src="footer.png" width="80%"></center>
+</div>
+<div class="footer" style="background-color: #FEE3F6;">
+	
+	<div>
+		<h5>Fort Lauderdale</h5>
+		<label>6570 N.Andrews Ave, Suite 200 Ft.Lauderale, FL 33309</label>
+	</div>
+	<div>
+		<h5>Fort Lauderdale</h5>
+		<label>6570 N.Andrews Ave, Suite 200 Ft.Lauderale, FL 33309</label>
+	</div>
+	<div>
+		<h5>Fort Lauderdale</h5>
+		<label>6570 N.Andrews Ave, Suite 200 Ft.Lauderale, FL 33309</label>
+	</div>
+	<div>
+		<h5>Fort Lauderdale</h5>
+		<label>6570 N.Andrews Ave, Suite 200 Ft.Lauderale, FL 33309</label>
+	</div>
+</div>
+</body>
+</html>
